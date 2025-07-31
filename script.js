@@ -88,3 +88,42 @@ document.addEventListener('DOMContentLoaded', () => {
     subtitle1Element.textContent = getRandomText(texts);
   }
 });
+
+// cursor.js
+const cursor = document.querySelector('.circle-cursor');
+
+// Track mouse movement
+document.addEventListener('mousemove', e => {
+  cursor.style.top = e.clientY + 'px';
+  cursor.style.left = e.clientX + 'px';
+});
+
+// Shrink on mouse down, revert on mouse up
+document.addEventListener('mousedown', e => {
+  cursor.style.width = '20px';
+  cursor.style.height = '20px';
+});
+document.addEventListener('mouseup', e => {
+  cursor.style.width = '30px';
+  cursor.style.height = '30px';
+});
+
+// Helper: Find if hovered element is clickable
+function isElementClickable(el) {
+  while (el) {
+    if (el.tagName === 'A' || el.tagName === 'BUTTON' || el.onclick || el.tabIndex === 0) {
+      return true;
+    }
+    el = el.parentElement;
+  }
+  return false;
+}
+
+// Change opacity on hover over clickable
+document.addEventListener('mousemove', e => {
+  if (isElementClickable(e.target)) {
+    cursor.style.background = 'rgba(255, 255, 255, 0.8)';
+  } else {
+    cursor.style.background = 'rgba(255, 255, 255, 0.35)';
+  }
+});
