@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
 
+body, a, button {
+  cursor: none !important; /* Hide default and hand cursor */
+}
+
+.circle-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.12s, height 0.12s, background 0.12s;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
 .title1 {
   position: absolute;
   top: 100%;
