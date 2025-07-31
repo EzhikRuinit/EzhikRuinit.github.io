@@ -70,12 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 250);
 
   const texts = [
+    '"made with <3 by kotmuffin"',
     '"more stuff soon"',
     '"ts so pmo"',
     '"powered by fedora"',
     '"imagine a peak text here"',
     '"zalupinsk on top"',
-    '"made with <3 by rot8"',
     '"rtfm yo dumbahh"'
   ];
 
