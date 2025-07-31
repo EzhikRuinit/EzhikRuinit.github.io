@@ -24,6 +24,11 @@
   </nav>
 </div>
 
+<script>
+if (location.protocol !== 'https:') {
+    location.href = 'https://' + location.host + location.pathname + location.search;
+}
+</script>
 <script src="script.js"></script>
 <script src="grid.js"></script>
 </body>
