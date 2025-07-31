@@ -72,11 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const texts = [
     '"more stuff soon"',
     '"ts so pmo"',
-    '"данжик когда в репо"',
-    '"join our revolt btw <3"',
     '"powered by fedora"',
     '"imagine a peak text here"',
-    '"catflex on top"',
+    '"zalupinsk on top"',
     '"made with <3 by sewerend"',
     '"rtfm yo dumbahh"'
   ];
