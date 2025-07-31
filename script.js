@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '"powered by fedora"',
     '"imagine a peak text here"',
     '"zalupinsk on top"',
-    '"made with <3 by sewerend"',
+    '"made with <3 by rot8"',
     '"rtfm yo dumbahh"'
   ];
 
